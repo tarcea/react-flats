@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import FlatList from './flat_list';
-import flats from './flats';
+import flats from '../../data/flats';
 
 class App extends Component {
   constructor(props) {
     super(props);
-}
+    // this.state = {
+    //   selectedFlat: flats[0],
+    //   flats
+    // };
+
+
+  }
 
   render() {
     return (
@@ -13,6 +19,7 @@ class App extends Component {
         <div className="flat-list">
           <FlatList />
         </div>
+        {console.log(flats)}
         <div className="map-container"></div>
       </div>
     );
